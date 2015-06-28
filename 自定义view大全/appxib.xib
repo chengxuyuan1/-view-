@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="5053" systemVersion="13F1066" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6aw-cK-l8b" customClass="appxib">
+            <rect key="frame" x="0.0" y="0.0" width="100" height="168"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="天天飞车.png" translatesAutoresizingMaskIntoConstraints="NO" id="3JV-KJ-UQJ">
+                    <rect key="frame" x="10" y="6" width="80" height="60"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                </imageView>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ChX-YC-paY">
+                    <rect key="frame" x="11" y="79" width="80" height="32"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcR-ZD-Kz8">
+                    <rect key="frame" x="28" y="100" width="46" height="49"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" title="下载">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="downloadBtnAction:" destination="6aw-cK-l8b" eventType="touchUpInside" id="fZ5-bQ-be5"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="ChX-YC-paY" secondAttribute="trailing" constant="9" id="5lh-Cv-GEI"/>
+                <constraint firstItem="XcR-ZD-Kz8" firstAttribute="leading" secondItem="6aw-cK-l8b" secondAttribute="leading" constant="28" id="DvS-hk-ERY"/>
+                <constraint firstItem="ChX-YC-paY" firstAttribute="leading" secondItem="6aw-cK-l8b" secondAttribute="leading" constant="11" id="FoH-sC-Vzc"/>
+                <constraint firstItem="3JV-KJ-UQJ" firstAttribute="leading" secondItem="6aw-cK-l8b" secondAttribute="leading" constant="10" id="OCI-TZ-iHv"/>
+                <constraint firstAttribute="trailing" secondItem="XcR-ZD-Kz8" secondAttribute="trailing" constant="26" id="RSx-lp-9F9"/>
+                <constraint firstItem="ChX-YC-paY" firstAttribute="height" secondItem="3JV-KJ-UQJ" secondAttribute="height" multiplier="4:2" id="TcF-Yi-KRf"/>
+                <constraint firstItem="ChX-YC-paY" firstAttribute="height" secondItem="XcR-ZD-Kz8" secondAttribute="height" id="bsS-JP-HHS"/>
+                <constraint firstAttribute="bottom" secondItem="XcR-ZD-Kz8" secondAttribute="bottom" constant="19" id="cCP-l7-Y2b"/>
+                <constraint firstAttribute="trailing" secondItem="3JV-KJ-UQJ" secondAttribute="trailing" constant="10" id="dCx-gM-NMd"/>
+                <constraint firstItem="3JV-KJ-UQJ" firstAttribute="top" secondItem="6aw-cK-l8b" secondAttribute="top" constant="6" id="ehB-3G-9b9"/>
+                <constraint firstItem="ChX-YC-paY" firstAttribute="top" secondItem="3JV-KJ-UQJ" secondAttribute="bottom" constant="13" id="oQZ-0e-fxf"/>
+                <constraint firstItem="XcR-ZD-Kz8" firstAttribute="top" secondItem="ChX-YC-paY" secondAttribute="bottom" constant="8" id="t5d-Bm-ElL"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="downloadBtn" destination="XcR-ZD-Kz8" id="gME-km-tMY"/>
+                <outlet property="icon" destination="3JV-KJ-UQJ" id="cQ8-wN-SMT"/>
+                <outlet property="titleLable" destination="ChX-YC-paY" id="OGV-RW-nLQ"/>
+            </connections>
+        </view>
+    </objects>
+    <resources>
+        <image name="天天飞车.png" width="44" height="46"/>
+    </resources>
+</document>
